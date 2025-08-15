@@ -10,7 +10,7 @@ The application follows a Retrieval-Augmented Generation (RAG) workflow to ensur
 
 1. **Interactive UI:** Built with Streamlit, the application provides a user-friendly and responsive chat interface, including multi-chat session management.
 2. **Advanced Conversational Memory:** It uses a history-aware retriever to understand the context of follow-up questions, allowing for a natural, flowing conversation.
-3. **High-Quality Embeddings:** Document and query embeddings are generated using a powerful Hugging Face Sentence Transformer model (sentence-transformers/all-MiniLM-L6-v2).
+3. **High-Quality Embeddings:** Document and query embeddings are generated using a powerful Hugging Face Sentence Transformer model (sentence-transformers/all-MiniLM-L6-v2). It has a 384-dimensional dense vector space
 4. **Efficient Vector Storage:** It leverages FAISS to create a fast, local vector store for efficient semantic search and retrieval.
 5. **Verifiable Answers:** Each response from the chatbot includes sources and citations, showing the page number and a snippet from the original PDF used to generate the answer.
 6.  **Chat History:** The conversation is stored in memory to handle follow-up questions effectively.
