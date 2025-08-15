@@ -1,19 +1,18 @@
 # ManPower-CaseStudy
 Building a Rag Application using Langchain
 
-This is an intelligent chatbot application that allows you to upload and have a conversation with your PDF documents.
-Built with Streamlit and LangChain, it uses Google's Gemini model and a FAISS vector store to provide accurate, context-aware answers.
+This is an intelligent chatbot application that allows you to upload and have a conversation with your PDF documents. Built with Streamlit and LangChain, it uses Google's Gemini model and a FAISS vector store to provide accurate, context-aware answers with source citations, and it uses HuggingFace to generate embeddings. 
 
-## ⚙️ How It Works
+## ⚙️ Core Features
 
 The application follows a Retrieval-Augmented Generation (RAG) workflow to ensure that the answers are based on factual data from the PDF document
 
-1. **Interactive UI:** Built with Streamlit, the application provides a user-friendly and responsive chat interface, including multi-chat session management.
-2. **Advanced Conversational Memory:** It uses a history-aware retriever to understand the context of follow-up questions, allowing for a natural, flowing conversation.
-3. **High-Quality Embeddings:** Document and query embeddings are generated using a powerful Hugging Face Sentence Transformer model (sentence-transformers/all-MiniLM-L6-v2). It has a 384-dimensional dense vector space
-4. **Efficient Vector Storage:** It leverages FAISS to create a fast, local vector store for efficient semantic search and retrieval.
-5. **Verifiable Answers:** Each response from the chatbot includes sources and citations, showing the page number and a snippet from the original PDF used to generate the answer.
-6.  **Chat History:** The conversation is stored in memory to handle follow-up questions effectively.
+1. **Interactive UI:** Built with Streamlit, the application provides a user-friendly and responsive chat interface.
+2. **Multi-Chat Management:** Start new conversations or switch between previous chat sessions, all managed in the sidebar.
+3. **Conversational Memory:** The chatbot understands the context of follow-up questions for a natural, flowing conversation.
+4. **Verifiable Answers:** Each response includes citations, showing the page number and a snippet from the original PDF.
+5. **Automated Evaluation:** An integrated evaluation system uses an "LLM-as-a-judge" to score the chatbot's accuracy against a set of test questions.
+6. **Modular Codebase:** The code is structured into separate modules for the UI (app.py) and core logic in the src folder, making it easy to maintain and extend.
 
 ## 🛠️ Tech Stack
 
