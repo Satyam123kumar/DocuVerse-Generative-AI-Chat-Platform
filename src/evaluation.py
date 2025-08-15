@@ -30,6 +30,14 @@ EVALUATION_QUESTIONS = [
                             The tree structure consists of nodes where each node represents a feature and branches represent the decision 
                             based on that feature. The leaves of the tree represent the final output or class label.
                         '''
+    },
+    {
+        "question": "What are different types of machine learning algorithms?",
+        "ground_truth": '''
+                            There are two main types of machine learning algorithms:
+                            1. Supervised Learning: Algorithms that learn from labeled data to make predictions or classifications.
+                            2. Unsupervised Learning: Algorithms that find patterns or groupings in unlabeled data.
+                        '''
     }
 ]
 
