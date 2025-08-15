@@ -4,12 +4,32 @@ from langchain_core.prompts import PromptTemplate
 # --- Evaluation Questions ---
 EVALUATION_QUESTIONS = [
     {
-        "question": "What is the Name on the document?",
-        "ground_truth": "Shashwat krishna Dwiwedi"
+        "question": "What is Logistic Regression?",
+        "ground_truth": '''Logistic Regression is a supervised machine learning algorithm used for classification problems. 
+                            Unlike linear regression which predicts continuous values it predicts the probability that an input belongs 
+                            to a specific class. It is used for binary classification where the output can be one of two possible 
+                            categories such as Yes/No, True/False or 0/1. It uses sigmoid function to convert inputs into a probability 
+                            value between 0 and 1. In this article, we will see the basics of logistic regression and its core concepts.'''
     },
     {
-        "question": "What is the aadhar card number",
-        "ground_truth": "301388714810"
+        "question": "What is support vector machine",
+        "ground_truth": '''
+                            Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification and regression tasks. 
+                            It tries to find the best boundary known as hyperplane that separates different classes in the data. It is useful when 
+                            you want to do binary classification like spam vs. not spam or cat vs. dog.
+                            The main goal of SVM is to maximize the margin between the two classes. The larger the margin the better 
+                            the model performs on new and unseen data.
+                        '''
+    },
+    {
+        "question": "What is decision tree?",
+        "ground_truth": '''
+                            A Decision Tree is a supervised machine learning algorithm used for classification and regression tasks. 
+                            It works by splitting the data into subsets based on the value of input features. Each split is made 
+                            to maximize the separation of classes or minimize the error in predictions.
+                            The tree structure consists of nodes where each node represents a feature and branches represent the decision 
+                            based on that feature. The leaves of the tree represent the final output or class label.
+                        '''
     }
 ]
 

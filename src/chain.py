@@ -17,15 +17,14 @@ def create_conversational_chain(api_key):
         llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=api_key)
         
         # Initialize the embedding model
-        embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+        embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
         
         # Load the local FAISS vector store
-        vectorstore = FAISS.load_local("faiss_index_store", embeddings, allow_dangerous_deserialization=True
-                                       )
+        vectorstore = FAISS.load_local("faiss_index_store", embeddings, allow_dangerous_deserialization=True)
         
         # Create a retriever from the vector store
         # 1. Create your base retriever from the vector store
-        retriever = vectorstore.as_retriever(search_type="similarity")
+        retriever = vectorstore.as_retriever()
 
         # retriever = MultiQueryRetriever.from_llm(
         #     retriever=base_retriever, 
