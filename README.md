@@ -60,22 +60,22 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the Repository**
     ```sh
-    git clone [https://github.com/Satyam123kumar/ManPower-CaseStudy.git]
-    cd ManPower-CaseStudy
+    git clone (https://github.com/Satyam123kumar/DocuVerse-Generative-AI-Chat-Platform.git)
+    cd DocuVerse-Generative-AI-Chat-Platform
     ```
 
 2.  **Create a Virtual Environment**
     ```sh
-    python -m venv mpgenv
+    python -m venv genv
     ```
     Activate the environment:
     * On Windows:
         ```sh
-        mpgenv\scripts\activate
+        genv\scripts\activate
         ```
     * On macOS/Linux:
         ```sh
-        source mpgenv/bin/activate
+        source genv/bin/activate
         ```
 
 3.  **Install Dependencies**
