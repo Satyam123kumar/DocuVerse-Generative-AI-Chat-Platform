@@ -1,4 +1,4 @@
-# ManPower-CaseStudy
+# DocuVerse: Generative AI Chat Platform
 Building a Rag Application using Langchain
 
 This is an intelligent chatbot application that allows you to upload and have a conversation with your PDF documents. Built with Streamlit and LangChain, it uses Google's Gemini model and a FAISS vector store to provide accurate, context-aware answers with source citations, and it uses HuggingFace to generate embeddings. 
